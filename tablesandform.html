@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables & forms</title>
+</head>
+<body>
+    <table border=1>
+        <!--table head-->
+        <thead>
+            
+            <th>name</th>
+            <th>salary</th>
+            <th>department</th>
+            <th>age</th>
+
+        </thead>
+        <!--table row-->
+        <tr>
+            <td>james hetfield</td>
+            <td>100$</td>
+            <td>musician</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>lars ulrich</td>
+            <td>150$</td>
+            <td>musician</td>
+            <td>66</td>
+        </tr>
+    </table>
+    <br><br><br>
+    <form action="images.html">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="namevalue"> 
+        <br>
+        <label for="salary">Salary: </label> 
+        <input type="text" id="salary" name="salary">
+        <br>
+        <input type="submit">
+    </form>
+    <br><br><br>
+    <form action="htmlbasic.html">
+        <label for="email">E Mail: </label>
+        <input type="email" id="email" name="E mail" placeholder="Enter your E mail">
+        <br>
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+        <br>
+        <input type="submit" value="login">
+
+
+
+    </form>
+    <br><br>
+
+    <form action="divvsspanhtml.html">
+        <p>Superman vs. Batman?</p>
+        <label for="superman">Superman: </label>
+        <input type="radio" id="superman" name="movie" value="Superman" > <!--radiobuttonda iki seçenekten sadece biri seçilebilsin istersek iki inputa da aynı name i vermemiz gerekir.-->
+        <br>                                             <!--ama url uzantısında yani backende hangi seçeneğin gittiğini görmemiz için bu sefer value parametresi kullanacağız ve onda belirteceğiz.-->
+        <label for="batman">Batman:</label>
+        <input type="radio" id="batman" name="movie" value="Batman" >
+        <br>
+        <input type="submit" value="choose">
+
+    </form>
+    <br><br>
+    <form action="htmllist.html">
+        <p>Rate your driver.</p>
+        <select name="rating" id="rating">
+            <option >5</option>
+            <option >4</option>
+            <option >3</option>
+            <option >2</option>
+            <option >1</option>
+        </select>
+        <br>
+    <input type="submit" value="choose">
+    </form>
+
+
+    
+    
+</body>
+</html>
